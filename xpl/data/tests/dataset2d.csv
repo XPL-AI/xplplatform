@@ -1,0 +1,9 @@
+data_point_uuid,instance_uuid,concept_id,predictor_id,previous_data_point_uuid,utc_timestamp,input_set,log_informativeness,logit_confidence,center_x,center_y,half_width,half_height
+data_point_image_2021-04-21_17-34-53_7879950d-3b3d-4d97-8602-03e3fcddb291,instance_e34e2e71-7449-4890-923f-5121ea085b1d,wn:n013744521,mnist,,2021-04-21_17-34-53,train,0,1,23,23,23,23
+data_point_image_2021-04-21_17-34-59_f8f7b151-e268-4ccf-8c6d-059b9bb80bf8,instance_3c44aee7-8844-4ef4-8d33-382a6b7aa7ca,wn:n013742358,mnist,,2021-04-21_17-34-59,train,0,1,,,,
+data_point_image_2021-04-21_17-35-04_3a61004b-73f0-4b45-a871-4abd0f57b495,instance_20716885-46df-4115-856a-7c48fcd631ee,wn:n013744304,mnist,,2021-04-21_17-35-04,train,0,1,,,,
+data_point_image_2021-04-21_17-35-05_44ec4c69-db6d-48e7-9239-476cf7dac8a9,instance_34e762e3-d733-4aee-8de8-e9a08efb4308,wn:n013742573,mnist,,2021-04-21_17-35-05,train,0,1,,,,
+data_point_image_2021-04-21_17-35-10_031c4108-1604-4abc-aef5-c197ba75486c,instance_c3ad7e51-d4e9-4a3e-bc7a-210d200e6e81,wn:n013745270,mnist,,2021-04-21_17-35-10,train,0,1,,,,
+data_point_image_2021-04-21_17-35-11_cfc22d6d-2c75-4da6-8c43-01a0c253c2e4,instance_a340e00e-d5ed-4fb1-a3b8-67d2bc70e4c6,wn:n013743269,mnist,,2021-04-21_17-35-11,train,0,1,,,,
+data_point_image_2021-04-21_17-35-15_caac3e64-ec6d-4462-af3e-141a00b408a9,instance_d7190282-c5e7-4cc2-bd4e-2664c2256cb7,wn:n013742573,mnist,,2021-04-21_17-35-15,train,0,1,,,,
+data_point_image_2021-04-21_17-35-15_4f65070b-ed61-4684-a367-779f4d6c92b1,instance_bcad9e6e-af19-4a42-b2fe-448d6081050c,wn:n013744044,mnist,,2021-04-21_17-35-15,train,0,1,,,,

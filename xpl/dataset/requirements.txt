@@ -1,0 +1,12 @@
+
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+-r ${XPL_CODE_DIR}/xpl/data/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/data
+
+-r ${XPL_CODE_DIR}/xpl/task/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/task
+
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/dataset

@@ -1,0 +1,39 @@
+<!doctype html>
+<html style="height:100%;">
+
+<head>
+    <title>Download Annotations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="jumbotron" id="loader" style="margin-top:20px; display: none;">
+                <h1 style="margin:-20px 0 40px 0;">Image Annotator</h1>
+                
+                    <button type="submit" class="btn btn-success" id="proceed" style="margin-top:30px;">Proceed</button>
+            </div>
+        </center>
+    </div>
+    <script>
+        var job_id = 'd18d4d2785434a43b0f3d4f43dfe9c61'
+        var api_url = 'job/'
+        const request = async () => {
+            const response = await fetch(api_url + job_id);
+            const json = await response.json();
+            console.log(json);
+            localStorage.setItem('data', JSON.stringify(json));
+            var x = document.getElementById("loader");
+            x.style.display = "block";
+            document.getElementById("proceed").onclick = function () {
+                location.href = 'job/' + job_id + "/annotate";
+            };
+        }
+
+        request();
+    </script>
+</body>
+
+</html>

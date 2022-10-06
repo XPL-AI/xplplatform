@@ -1,0 +1,26 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+
+-r ${XPL_CODE_DIR}/xpl/concept/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/concept
+
+-r ${XPL_CODE_DIR}/xpl/dataset/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/dataset
+
+-r ${XPL_CODE_DIR}/xpl/model/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/model
+
+-r ${XPL_CODE_DIR}/xpl/measurer/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/measurer
+
+-r ${XPL_CODE_DIR}/xpl/train/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/train
+
+-r ${XPL_CODE_DIR}/xpl/user/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/user
+
+-r ${XPL_CODE_DIR}/xpl/task/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/task
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/coordinate

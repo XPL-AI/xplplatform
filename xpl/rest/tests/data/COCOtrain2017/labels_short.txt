@@ -1,0 +1,6 @@
+0: unlabeled
+1: person
+2: bicycle
+14: parking meter
+43: tennis racket
+103: ceiling-tile

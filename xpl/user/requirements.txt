@@ -1,0 +1,6 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/user

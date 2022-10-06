@@ -1,0 +1,13 @@
+{
+  "xpl.rest.tests": {
+    "userapi_uri": "https://userapi-dev-7mvc6un3ya-ez.a.run.app",
+    "dataapi_uri": "https://dataapi-dev-7mvc6un3ya-ez.a.run.app",
+    "valid_username": "8c6a5c56a2@test.com",
+    "valid_user_id": "41db42cbbeb749daa52c998df5d13d52",
+    "valid_api_key": "",
+    "invalid_username": "invalid_username",
+    "invalid_api_key": "invalid_api_key"
+  },
+  "xpl.infrastructure.storage": {
+  }
+}

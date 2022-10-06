@@ -1,0 +1,45 @@
+{
+    "xpl.model": {
+        "cloud_storage_bucket": "xplai-models-dev-europe-west1-01"
+    },
+    "xpl.concept": {
+        "babel_net_key": "7e1ba516-2c3f-40f5-93d1-c97b647a5bdb",
+        "concept_collection_name": "concepts",
+        "concept_search_provider": "wordnet",
+        "babel_net_uri": "https://babelnet.io/v5"
+    },
+    "xpl.infrastructure.storage": {
+        "google_cloud_storage_service_account_file": ".json"
+    },
+    "xpl.task": {
+        "supported_model_sizes": {
+            "video": [
+                "onesize",
+                "xxxs"
+            ],
+            "image": [
+                "onesize",
+                "xxxs"
+            ],
+            "audio": [
+                "onesize",
+                "s",
+                "m"
+            ]
+        },
+        "supported_modalities": [
+            "audio",
+            "image",
+            "video"
+        ],
+        "planned_supported_modalities_text": "text modality is planned for release by the end of Q3 2021"
+    },
+    "xpl.data": {
+        "local_unified_storage_space": "data/xpl_data_warehouse/",
+        "big_query_project_id": "xplplatform01",
+        "storage_root_folder": "data/xpl_datasets/",
+        "concept_root_folder": "data/concept_maps/",
+        "big_query_datasets_location": "europe-west4"
+    },
+    "xpl.coordinate": {}
+}

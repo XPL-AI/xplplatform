@@ -1,0 +1,5 @@
+{
+  "xpl.infrastructure.storage": {
+    "google_cloud_storage_service_account_file": ".json"
+  }
+}

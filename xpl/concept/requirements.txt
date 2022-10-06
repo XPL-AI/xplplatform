@@ -1,0 +1,9 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency: ######
+## 1 Installs dependencies from other local libraries
+-r ${XPL_CODE_DIR}/xpl/infrastructure/config/requirements.txt
+## 2 Installs dependencies from setup.py install_requires
+-e ${XPL_CODE_DIR}/xpl/infrastructure/config
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/concept

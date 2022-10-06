@@ -1,0 +1,58 @@
+{
+  "xpl.model": {
+    "storage_root_folder": "../logs/",
+    "cloud_storage_root_folder": "logs/",
+    "cloud_storage_bucket": "xplai-models-dev-europe-west1-01",
+    "cloud_storage_credentials": ".json",
+    "measurement_name_synonyms": [
+      [
+        "error",
+        "err"
+      ],
+      [
+        "accuracy",
+        "acc"
+      ],
+      [
+        "average_precision",
+        "mean_average_precision",
+        "mAP",
+        "AP"
+      ],
+      [
+        "area_under_curve",
+        "AUC"
+      ]
+    ],
+    "measurement_guide": {
+      "error": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": true
+      },
+      "loss": {
+        "max": "depends_on_task",
+        "min": 0.0,
+        "lower_is_better": true
+      },
+      "accuracy": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      },
+      "average_precision": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      },
+      "area_under_curve": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      }
+    }
+  },
+  "xpl.infrastructure.storage": {
+    "google_cloud_storage_service_account_file": ".json"
+  }
+}

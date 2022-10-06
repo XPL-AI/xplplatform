@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js"></script>
+
+
+    <title>Audio Annotate</title>
+</head>
+
+<body>
+
+    <div id="content" class="container content">
+        <div class="row">
+            <div id="waveform"></div>
+            <div id="wave-timeline"></div>
+        </div>
+
+        <div id="controlButtons">
+            <button onclick="start()">Play</button>
+        </div>
+    </div>
+
+    <script>
+        var RegionsPlugin = window.WaveSurfer.regions;
+        var play = false;
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple',
+            plugins: [
+                WaveSurfer.timeline.create({
+                    container: '#wave-timeline'
+                }),
+                RegionsPlugin.create({
+                    regionsMinLength: 2,
+                    regions: [
+                        {
+                            id: 'first',
+                            start: 10,
+                            end: 180,
+                            loop: false,
+                            color: 'hsla(400, 100%, 30%, 0.5)'
+                        }, {
+                            id: 'second',
+                            start: 5,
+                            end: 7,
+                            loop: false,
+                            color: 'hsla(200, 50%, 70%, 0.4)',
+                            minLength: 1,
+                        }
+                    ],
+                    dragSelection: {
+                        slop: 5
+                    }
+                })
+
+            ]
+        });
+
+
+        wavesurfer.load("http://www.archive.org/download/mshortworks_001_1202_librivox/msw001_03_rashomon_akutagawa_mt_64kb.mp3");
+        // wavesurfer.load("audio/song.mp3");
+
+        wavesurfer.on('ready', function () {
+            console.log("Loaded");
+            // Enable creating regions by dragging
+            wavesurfer.enableDragSelection({});
+            wavesurfer.addRegion({
+                id: 'first',
+                start: 10, // time in seconds
+                end: 180, // time in seconds
+                color: rgba(0, 30, 10, 4)
+            });
+            console.log(wavesurfer);
+        });
+        function start() {
+            if (play == false) {
+                wavesurfer.play();
+                // Enable creating regions by dragging
+                console.log(wavesurfer);
+                play = true;
+                console.log('start',wavesurfer.regions.list['first'].start)
+                console.log('end',wavesurfer.regions.list['first'].end)
+                wavesurfer.regions.list['first'].play();
+
+            }
+            else {
+                play = false;
+                wavesurfer.pause();
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

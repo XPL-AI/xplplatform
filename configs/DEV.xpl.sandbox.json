@@ -1,0 +1,73 @@
+{
+  "xpl.sandbox": {
+    "testSandboxField": "testSandboxValue"
+  },
+  "xpl.infrastructure.storage": {
+    "google_cloud_storage_service_account_file": ""
+  },
+  "xpl.concept": {
+    "concept_search_provider": "wordnet",
+    "concept_collection_name": "concepts",
+    "babel_net_uri": "https://babelnet.io/v5",
+    "babel_net_key": "7e1ba516-2c3f-40f5-93d1-c97b647a5bdb"
+  },
+  "xpl.model": {
+    "storage_root_folder": "../logs/",
+    "cloud_storage_root_folder": "logs/",
+    "cloud_storage_bucket": "xplai-models-dev-europe-west1-01",
+    "cloud_storage_credentials": "",
+    "measurement_name_synonyms": [
+      [
+        "error",
+        "err"
+      ],
+      [
+        "accuracy",
+        "acc"
+      ],
+      [
+        "average_precision",
+        "mean_average_precision",
+        "mAP",
+        "AP"
+      ],
+      [
+        "area_under_curve",
+        "AUC"
+      ]
+    ],
+    "measurement_guide": {
+      "error": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": true
+      },
+      "loss": {
+        "max": "depends_on_task",
+        "min": 0.0,
+        "lower_is_better": true
+      },
+      "accuracy": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      },
+      "average_precision": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      },
+      "area_under_curve": {
+        "max": 1.0,
+        "min": 0.0,
+        "lower_is_better": false
+      }
+    }
+  },
+  "xpl.data": {
+    "storage_root_folder": "data/xpl_datasets/",
+    "concept_root_folder": "data/concept_maps/",
+    "local_unified_storage_space": "data/xpl_data_warehouse/",
+    "big_query_project_id": "xplplatform01"
+  }
+}

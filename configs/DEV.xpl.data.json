@@ -1,0 +1,12 @@
+{
+    "xpl.data": {
+        "storage_root_folder": "data/xpl_datasets/",
+        "concept_root_folder": "data/concept_maps/",
+        "local_unified_storage_space": "/Users/ivankorol/xpl/code/xplplatform/data/xpl_data_warehouse",
+        "big_query_project_id": "xplplatform01",
+        "big_query_datasets_location": "europe-west4"
+    },
+    "xpl.infrastructure.storage": {
+        "google_cloud_storage_service_account_file": ".json"
+    }
+}

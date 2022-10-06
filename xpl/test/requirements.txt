@@ -1,0 +1,8 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+# -r ${XPL_CODE_DIR}/xpl/model/requirements.txt
+# -e ${XPL_CODE_DIR}/xpl/model
+
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/test

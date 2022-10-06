@@ -1,0 +1,21 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+
+-r ${XPL_CODE_DIR}/xpl/infrastructure/config/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/infrastructure/config
+
+-r ${XPL_CODE_DIR}/xpl/infrastructure/storage/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/infrastructure/storage
+
+-r ${XPL_CODE_DIR}/xpl/concept/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/concept
+
+-r ${XPL_CODE_DIR}/xpl/model/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/model
+
+-r ${XPL_CODE_DIR}/xpl/data/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/data
+
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/sandbox

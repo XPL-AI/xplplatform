@@ -1,0 +1,30 @@
+{
+  "xpl.rest.userapi": {
+
+  },
+  "xpl.concept": {
+    "concept_search_provider": "wordnet",
+    "concept_collection_name": "concepts",
+    "babel_net_uri": "https://babelnet.io/v5",
+    "babel_net_key": "7e1ba516-2c3f-40f5-93d1-c97b647a5bdb"
+  },
+  "xpl.task": {
+    "supported_modalities":  ["audio", "image", "video"],
+    "planned_supported_modalities_text": "text modality is planned for release by the end of Q3 2021",
+    "supported_model_sizes":  {
+      "audio": ["onesize", "s", "m"],
+      "image": ["onesize", "xxxs"],
+      "video": ["onesize", "xxxs"]
+    }
+  },
+  "xpl.data": {
+        "storage_root_folder": "data/xpl_datasets/",
+        "concept_root_folder": "data/concept_maps/",
+        "local_unified_storage_space": "/Users/ivankorol/xpl/code/xplplatform/data/xpl_data_warehouse",
+        "big_query_datasets_location": "europe-west4",
+        "big_query_project_id": "xplplatform01"
+    },
+  "xpl.infrastructure.storage": {
+        "google_cloud_storage_service_account_file": ".json"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "xpl.rest.backend": {
+    "testRestBackendField": "testRestBackendFieldValue"
+  },
+  "xpl.backend": {
+    "babel_net_uri": "https://babelnet.io/v5",
+    "babel_net_key": "7e1ba516-2c3f-40f5-93d1-c97b647a5bdb",
+    "concept_data_default_warehouse": "xplplatform01",
+    "concept_data_default_dataset": "concept_data_dev",
+    "model_data_default_dataset": "model_data_dev",
+    "cvat_url": "http://35.204.154.147:8080/api/v1",
+    "cvat_authorization_token": "a5da71068f95804c341668026193a69161b70281"
+  },
+  "xpl.infrastructure.storage": {
+    "google_cloud_storage_service_account_file": ".json"
+  }
+}

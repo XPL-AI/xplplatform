@@ -1,0 +1,13 @@
+###### Dependencies from local projects ######
+###### 2 lines for each dependency ######
+-r ${XPL_CODE_DIR}/xpl/infrastructure/config/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/infrastructure/config
+
+-r ${XPL_CODE_DIR}/xpl/user/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/user
+
+-r ${XPL_CODE_DIR}/xpl/annotation/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/annotation
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/rest/annotationapi

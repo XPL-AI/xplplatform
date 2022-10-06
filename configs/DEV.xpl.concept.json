@@ -1,0 +1,8 @@
+{
+  "xpl.concept": {
+    "concept_search_provider": "wordnet",
+    "concept_collection_name": "concepts",
+    "babel_net_uri": "https://babelnet.io/v5",
+    "babel_net_key": "7e1ba516-2c3f-40f5-93d1-c97b647a5bdb"
+  }
+}

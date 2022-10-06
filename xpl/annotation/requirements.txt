@@ -1,0 +1,13 @@
+#/Users/ivankorol/Downloads/prodigy-1.10.8-cp36.cp37.cp38-cp36m.cp37m.cp38-macosx_10_9_x86_64.whl
+
+-r ${XPL_CODE_DIR}/xpl/infrastructure/config/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/infrastructure/config
+
+-r ${XPL_CODE_DIR}/xpl/concept/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/concept
+
+-r ${XPL_CODE_DIR}/xpl/data/requirements.txt
+-e ${XPL_CODE_DIR}/xpl/data
+
+###### Install dependencies for this project from setup.py install_requires ######
+-e ${XPL_CODE_DIR}/xpl/annotation

@@ -1,0 +1,17 @@
+{
+  "xpl.rest.tests": {
+    "userapi_uri": "http://localhost:8000",
+    "dataapi_uri": "http://localhost:8001",
+    "annotation_uri": "http://localhost:8002",
+    "userapi_uri_stage": "https://userapi-dev-7mvc6un3ya-ez.a.run.app",
+    "dataapi_uri_stage": "https://dataapi-dev-7mvc6un3ya-ez.a.run.app",
+    "annotation_uri_stage": "https://annotationapi-dev-7mvc6un3ya-ez.a.run.app",
+    "valid_username": "8c6a5c56a2@test.com",
+    "valid_user_id": "41db42cbbeb749daa52c998df5d13d52",
+    "valid_api_key": "",
+    "invalid_username": "invalid_username",
+    "invalid_api_key": "invalid_api_key"
+  },
+  "xpl.infrastructure.storage": {
+  }
+}
